@@ -1,0 +1,49 @@
+{
+  "name": "@dai-design/dai-design-desktop",
+  "version": "0.0.1",
+  "description": "dai-design-desktop",
+  "keywords": [
+    "frontend",
+    "ui-components"
+  ],
+  "homepage": "https://github.com/AlbertLin0923/dai-design/tree/main/packages/dai-design-desktop",
+  "bugs": {
+    "url": "https://github.com/AlbertLin0923/dai-design/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertLin0923/dai-design",
+    "directory": "packages/dai-design-desktop"
+  },
+  "license": "MIT",
+  "author": "AlbertLin0923",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "classnames": "^2.3.1",
+    "react-transition-group": "^4.4.2"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "engines": {
+    "node": ">=14.6.0"
+  }
+}

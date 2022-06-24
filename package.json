@@ -1,0 +1,68 @@
+{
+  "name": "dai-design",
+  "version": "0.0.1",
+  "private": true,
+  "description": "dai-design",
+  "keywords": [
+    "frontend",
+    "ui-components"
+  ],
+  "homepage": "https://github.com/AlbertLin0923/dai-design",
+  "bugs": {
+    "url": "https://github.com/AlbertLin0923/dai-design"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertLin0923/dai-design"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "npm run lint:eslint && npm run lint:stylelint && npm run lint:prettier",
+    "lint-staged": "lint-staged",
+    "lint:eslint": "eslint ./ --fix",
+    "lint:prettier": "prettier ./ --write --check",
+    "lint:stylelint": "stylelint \"packages/**/*.{less,sass,scss,stylu,css}\" --fix",
+    "prepare": "husky install",
+    "release": "ts-node scripts/release.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@mango-scripts/esp-config": "^1.0.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^28.1.3",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.0.0",
+    "@types/prompts": "^2.0.14",
+    "@types/react": "^18.0.14",
+    "@types/react-transition-group": "^4.4.5",
+    "@types/semver": "^7.3.10",
+    "@umijs/fabric": "^2.12.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "dumi": "^1.1.42",
+    "eslint": "^8.18.0",
+    "execa": "5.1.1",
+    "father-build": "^1.22.3",
+    "fs-extra": "^10.1.0",
+    "git-repo-info": "^2.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
+    "prettier": "^2.7.1",
+    "prompts": "^2.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semver": "^7.3.7",
+    "stylelint": "^14.9.1",
+    "ts-node": "^10.8.1",
+    "jest": "^28.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

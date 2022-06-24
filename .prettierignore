@@ -1,0 +1,12 @@
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production
+.umi-test
+
+pnpm-lock.yaml
+pnpm-workspace.yaml
+packages/*/CHANGELOG.md
+dist
