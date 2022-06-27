@@ -23,9 +23,10 @@
     "lint:prettier": "prettier ./ --write --check",
     "lint:stylelint": "stylelint \"packages/**/*.{less,sass,scss,stylu,css}\" --fix",
     "prepare": "husky install",
-    "release": "ts-node scripts/release.ts"
+    "release": "ts-node scripts/release.ts",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
@@ -50,6 +51,8 @@
     "fs-extra": "^10.1.0",
     "git-repo-info": "^2.1.1",
     "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "lint-staged": "^13.0.2",
     "minimist": "^1.2.6",
     "picocolors": "^1.0.0",
@@ -59,8 +62,8 @@
     "react-dom": "^18.2.0",
     "semver": "^7.3.7",
     "stylelint": "^14.9.1",
-    "ts-node": "^10.8.1",
-    "jest": "^28.1.1"
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1"
   },
   "engines": {
     "node": ">=14.0.0"

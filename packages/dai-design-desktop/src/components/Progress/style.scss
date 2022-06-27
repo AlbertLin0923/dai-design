@@ -24,9 +24,4 @@
       margin: 0 5px;  
     }
   }
-  @each $key, $val in $theme-colors {
-    .color-#{$key} {
-      background-color: $val;
-    }
-  }
 }

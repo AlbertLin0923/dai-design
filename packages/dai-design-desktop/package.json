@@ -35,7 +35,6 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.1.18",
     "classnames": "^2.3.1",
     "react-transition-group": "^4.4.2"
   },

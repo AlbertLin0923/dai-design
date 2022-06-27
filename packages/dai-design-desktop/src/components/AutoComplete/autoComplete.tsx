@@ -6,8 +6,6 @@ import classNames from 'classnames'
 import type { InputProps } from '../Input/input'
 import Input from '../Input/input'
 
-import Icon from '../Icon/icon'
-
 import Transition from '../Transition/transition'
 
 import useDebounce from '../../helpers/useDebounce'
@@ -142,11 +140,6 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
         }}
       >
         <ul className="adai-suggestion-list">
-          {loading && (
-            <div className="suggestion-loading-icon">
-              <Icon icon="spinner" spin />
-            </div>
-          )}
           {suggestions.map((item, index) => {
             const cnames = classNames('suggestion-item', {
               'is-active': index === highlightIndex

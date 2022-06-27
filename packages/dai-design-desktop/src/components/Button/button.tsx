@@ -31,14 +31,7 @@ type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>;
 
 
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
-/**
- * 页面中最常用的的按钮元素，适合于完成特定的交互
- * ### 引用方法
- *
- * ~~~js
- * import { Button } from 'vikingship'
- * ~~~
- */
+
 export const Button: FC<ButtonProps> = props => {
   const {
     type,
@@ -49,7 +42,7 @@ export const Button: FC<ButtonProps> = props => {
     href,
     ...restProps
   } = props;
-  // btn, btn-lg, btn-primary
+  
   const classes = classNames('adai-btn', className, {
     [`adai-btn-${type}`]: type,
     [`adai-btn-${size}`]: size,

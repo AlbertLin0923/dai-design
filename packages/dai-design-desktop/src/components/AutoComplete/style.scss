@@ -14,12 +14,6 @@
   border: $menu-border-width solid $menu-border-color;
   box-shadow: $submenu-box-shadow;
   width: 100%;
-  .suggstion-loading-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 75px;
-  }
   .suggestion-item {
     padding: $menu-item-padding-y $menu-item-padding-x;
     cursor: pointer;
